@@ -82,7 +82,8 @@ $(document).ready(function () {
     function (command, term) {
       if (command !== "") {
         try {
-          const apiUrl = "http://127.0.0.1:3000/prompt";
+          const apiUrl =
+            "https://main--celadon-dieffenbachia-edf87e.netlify.app/server/prompt";
 
           // SEND API REQUEST
           const body = {
