@@ -1,9 +1,13 @@
 {
+  "scripts": {
+    "build": "netlify deploy --prod"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "openai": "^3.1.0"
+    "openai": "^3.1.0",
+    "serverless-http": "^3.2.0"
   }
 }

@@ -31,6 +31,8 @@ exports.handler = (event, context, callback) => {
     console.log(`server is running at ${port}`);
   });
 
+  module.exports.handler = serverless(app);
+
   // Send API Request
   async function sendApiRequest(prompt) {
     const response = await openai.createCompletion({
