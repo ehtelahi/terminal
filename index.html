@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal@2.x.x/css/jquery.terminal.min.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+    <div class="scanline"></div>
+    <div class="wrapper">
+        <div class="content clearfix">
+
+            <header class="site clearfix">
+                <div class="col one">
+                    <img src="images/LKS-Logo12.png" alt="LKS Systems"
+                        width="740" height="729" id="logo-v" />
+                </div>
+                <div class="col two">
+                    <h4>Locke Keyed Industries (tm) <br /> <b>H</b>euristically <b>E</b>ncrypted <b>R</b>eal-Time
+                        <b>O</b>perating
+                        <b>S</b>ystem (HEROS)
+                    </h4>
+                    <p>----------------------------------------</p>
+                    <p>Locke Systems v 10.9.3</p>
+                    <p>(c)1991 LK Industries</p>
+                    <p>- Server 5232 -</p>
+                </div>
+            </header>
+
+            <nav class="site clear">
+                <ul class="tabs-btns">
+                    <li><a href="javascript:void(0)" class="js-tabs-btn active" data-tab-id="#home-tab">Home</a></li>
+                    <li><a href="javascript:void(0)" class="js-tabs-btn" data-tab-id="#inbox-tab">Inbox</a></li>
+                    <li><a href="javascript:void(0)" class="js-tabs-btn" data-tab-id="#terminal-tab">Support
+                            Terminal</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p>System Administrator Integrated Message System (SAIMS)</p>
+            <p>System Administrator - ROOT</p>
+
+            <p class="clear"><br /></p>
+
+            <div class="tab active js-tab" id="home-tab">
+                <p>Welcome to the System Administrator Integrated Message System (SAIMS). Please note: This system will
+                    no longer be accessable after the upgrade, please ensure all SAP documents are encrypted and logged
+                    with support prior to February 26, 1991. See you on the other side.
+                </p>
+            </div>
+
+            <div class="tab js-tab" id="inbox-tab">
+                <div>Message History</div> <br>
+                <div class="inbox-btn-wrap">
+                    <button for="email1" class="inbox-btn js-inbox-btn active" data-input-id="#email1">RE: Where To From Here
+                        </button>
+                    <div id="email1">Let me be the first to congratulate you on passing your entrance exam. WHile it may seem like a trivial task, few seem to manage it. Will be in touch regarding your first project.<br><br>- M</div><br />
+                    <button for="email2" class="inbox-btn js-inbox-btn" data-input-id="#email2">RE: Congratulations
+                        </button>
+                    <div id="email2">Here is a noother message from youor the undertaker telling you how to remove your own skin from your shoulders. Isnt that wierd? yes I submit that is is.<br><br>Mike</div><br />
+                    <button for="email3" class="inbox-btn js-inbox-btn" data-input-id="#email3">RE: First Contact
+                        </button>
+                    <div id="email3">You have everything you need. You have until Tuesday TO get what I need.</div><br />
+                    <button for="email4" class="inbox-btn js-inbox-btn" data-input-id="#email4">RE: It Doesnt Have To End
+                        </button>
+                    <div id="email4">The Administrator is always listening. all you need to do is ask for help..</div><br />
+                </div>
+            </div>
+
+            <div class="tab js-tab" id="terminal-tab">
+                <div id="terminal"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+        integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+        crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
+    <script src="./main.js"></script>
+    
+
+</body>
+
+</html>
