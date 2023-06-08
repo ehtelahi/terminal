@@ -1,5 +1,6 @@
 exports.handler = (event, context, callback) => {
   const express = require("express");
+  const serverless = require("serverless-http");
   const cors = require("cors");
   const path = require("path");
   const bodyParser = require("body-parser");
