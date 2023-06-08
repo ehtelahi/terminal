@@ -82,8 +82,7 @@ $(document).ready(function () {
     function (command, term) {
       if (command !== "") {
         try {
-          const apiUrl =
-            "https://main--celadon-dieffenbachia-edf87e.netlify.app/.netlify/functions/server/prompt";
+          const apiUrl = "/.netlify/functions/server/prompt";
 
           // SEND API REQUEST
           const body = {
