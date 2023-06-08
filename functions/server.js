@@ -11,6 +11,11 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+//Get all students
+router.get("/", (req, res) => {
+  res.send("App is running..");
+});
+
 // Handling request
 router.post("/prompt", async (req, res) => {
   const response = await sendApiRequest(req.body.prompt);
