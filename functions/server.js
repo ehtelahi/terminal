@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
 
 // Handling request
 router.post("/prompt", async (req, res) => {
+  console.log(process.env.OPENAI_API_KEY);
   const response = await sendApiRequest(req.body.prompt);
   res.json(response.data);
 });
