@@ -20,6 +20,10 @@ exports.handler = (event, context, callback) => {
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(cors());
 
+  app.get("/", async (req, res) => {
+    res.json("App is running");
+  });
+
   // Handling request
   app.post("/prompt", async (req, res) => {
     const response = await sendApiRequest(req.body.prompt);
